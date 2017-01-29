@@ -16,7 +16,8 @@
             }
           }
         ]);
-        return console.log('superuser inserted');
+        console.log('superuser inserted');
+        return console.log('please remember to change the superadmin password');
       } else {
         if (ndx.validPassword('admin', users[0].local.password)) {
           return console.log('please remember to change the superadmin password');

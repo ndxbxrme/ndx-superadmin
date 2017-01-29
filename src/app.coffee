@@ -12,6 +12,7 @@ module.exports = (ndx) ->
           superadmin: {}
       }]
       console.log 'superuser inserted'
+      console.log 'please remember to change the superadmin password'
     else
       if ndx.validPassword 'admin', users[0].local.password
         console.log 'please remember to change the superadmin password'
