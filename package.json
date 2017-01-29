@@ -1,0 +1,27 @@
+{
+  "name": "ndx-superadmin",
+  "version": "0.0.2",
+  "description": "default superadmin user for ndx-framework",
+  "main": "build/app.js",
+  "scripts": {
+    "test": "node build/test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ndxbxrme/ndx-superadmin.git"
+  },
+  "author": "ndxbxrme",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ndxbxrme/ndx-superadmin/issues"
+  },
+  "homepage": "https://github.com/ndxbxrme/ndx-superadmin",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-coffee": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "load-grunt-tasks": "^3.5.2"
+  }
+}
