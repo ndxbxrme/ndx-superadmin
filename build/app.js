@@ -3,9 +3,9 @@
   module.exports = function(ndx) {
     return ndx.database.on('ready', function() {
       var users;
-      users = ndx.database.exec('SELECT * FROM ' + ndx.settings.USER_TABLE + ' WHERE local->email=?', ['superadmin@admin.com']);
+      users = ndx.database.exec("SELECT * FROM " + ndx.settings.USER_TABLE + " WHERE local->email=?", ['superadmin@admin.com']);
       if (!users.length) {
-        ndx.database.exec('INSERT INTO users VALUES ?', [
+        ndx.database.exec("INSERT INTO " + ndx.settings.USER_TABLE + " VALUES ?", [
           {
             local: {
               email: 'superadmin@admin.com',
