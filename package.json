@@ -1,6 +1,6 @@
 {
   "name": "ndx-superadmin",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "default superadmin user for ndx-framework",
   "main": "build/app.js",
   "scripts": {
