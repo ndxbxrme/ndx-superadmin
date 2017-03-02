@@ -13,4 +13,5 @@ require 'ndx-server'
   database: 'db'
 .use ndx-user-roles
 .use ndx-superadmin
+.start()
 ```
