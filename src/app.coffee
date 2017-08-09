@@ -8,6 +8,7 @@ module.exports = (ndx) ->
     , (users) ->
       if not users.length
         ndx.database.insert ndx.settings.USER_TABLE,
+          email: 'superadmin@admin.com'
           local:
             email: 'superadmin@admin.com'
             password: ndx.generateHash 'admin'
