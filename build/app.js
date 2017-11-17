@@ -3,9 +3,7 @@
   module.exports = function(ndx) {
     return ndx.database.on('ready', function() {
       return ndx.database.select(ndx.settings.USER_TABLE, {
-        local: {
-          email: 'superadmin@admin.com'
-        }
+        email: 'superadmin@admin.com'
       }, function(users) {
         if (!users.length) {
           ndx.database.insert(ndx.settings.USER_TABLE, {

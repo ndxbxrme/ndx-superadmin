@@ -3,8 +3,7 @@
 module.exports = (ndx) ->
   ndx.database.on 'ready', ->
     ndx.database.select ndx.settings.USER_TABLE,
-      local:
-        email: 'superadmin@admin.com'
+      email: 'superadmin@admin.com'
     , (users) ->
       if not users.length
         ndx.database.insert ndx.settings.USER_TABLE,
